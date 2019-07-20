@@ -1,0 +1,30 @@
+$ npm i -g @nestjs/cli
+$ nest new project-name
+
+Help
+    nest --help
+
+Creamos:
+    nest g mo product
+    nest g co product
+    nest g service product
+
+    folder: 
+        dto
+            Donde se van almacenar los tipos de datos que seran transmitidos,
+            entre el cliente y el servidor
+
+            product.dto.ts
+                Este file se crea dentro de folder
+    
+        interfaces
+            Una manera de describir nuestros datos, ayuda al autocompletado analisis de errores
+
+            product.interface.ts
+                Esta es la interface
+        
+        schemas
+            el schema de la base de datos de mongodb
+
+    Ejecutar la app:
+        npm start:dev    
