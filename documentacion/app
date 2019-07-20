@@ -28,3 +28,8 @@ Creamos:
 
     Ejecutar la app:
         npm start:dev    
+
+
+
+ correr mongodb
+    sudo service 
