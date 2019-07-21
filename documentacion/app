@@ -31,5 +31,20 @@ Creamos:
 
 
 
- correr mongodb
-    sudo service 
+correr mongodb
+    sudo service mongod start
+
+
+Instalar mongoose para database
+
+    npm install --save @nestjs/mongoose mongoose
+
+Instalar el autocompletado mongoose
+
+
+    npm install @types/mongoose -D
+        ahora con ctrl + space (lista)
+
+
+
+
