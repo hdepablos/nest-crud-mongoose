@@ -26,13 +26,14 @@ export class ProductService {
     }
 
     async deleteProduct(id: string): Promise<Product>{
-        const product = await this.productModel.findOneAndDelete(id);
+        const product = await this.productModel.findByIdAndDelete(id);
         return product;
     }
 
     async updateProduct(id: string, productDto: ProductDto): Promise<Product>{
-        const product = await this.productModel.findOneAndUpdate(id, productDto, {new: true});
+        console.log(id);
+        
+        const product = await this.productModel.findByIdAndUpdate(id, productDto, {new: true});
         return product;
     }
-
 }
